@@ -27,20 +27,10 @@ public class BaseFile {
 	
 	
 	@BeforeSuite
-	public void initialization()  {
-			try {
-			fisReader = new FileInputStream(System.getProperty("user.dir") + "/src/test/resources/config.properties");
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	public void initialization() throws IOException {
+		fisReader = new FileInputStream(System.getProperty("user.dir") + "/src/test/resources/config.properties");
 		property = new Properties();
-		try {
-			property.load(fisReader);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		property.load(fisReader);
 
 		 ChromeOptions options = new ChromeOptions();
 		 options.addArguments("--headless");
