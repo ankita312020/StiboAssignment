@@ -31,13 +31,25 @@ public class BaseFile {
 		fisReader = new FileInputStream(System.getProperty("user.dir") + "/src/test/resources/config.properties");
 		property = new Properties();
 		property.load(fisReader);
-		WebDriverManager.chromedriver().setup();
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--incognito", "--disable-blink-features=AutomationControlled");
-		driver =  new ChromeDriver(options);
-		driver.get(property.getProperty("URL"));
+
+		 ChromeOptions options = new ChromeOptions();
+		 options.addArguments("--headless");
+                 options.addArguments("--no-sandbox");
+		 options.addArguments("--disable-dev-shm-usage");
+                 driver = new ChromeDriver(options);
+		 // WebDriverManager.chromedriver().setup();
+		 // driver = new ChromeDriver();
+	        driver.get(property.getProperty("URL"));
 		driver.manage().window().maximize();
 		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+
+
+		
+		// WebDriverManager.chromedriver().setup();
+		// ChromeOptions options = new ChromeOptions();
+		// options.addArguments("--incognito", "--disable-blink-features=AutomationControlled");
+		// driver =  new ChromeDriver(options);
+		
 	}
 
 	@BeforeTest
