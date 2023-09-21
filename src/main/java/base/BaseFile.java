@@ -28,9 +28,19 @@ public class BaseFile {
 	
 	@BeforeSuite
 	public void initialization() throws IOException {
-		fisReader = new FileInputStream(System.getProperty("user.dir") + "/src/test/resources/config.properties");
+			try {
+			fisReader = new FileInputStream(System.getProperty("user.dir") + "/src/test/resources/config.properties");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		property = new Properties();
-		property.load(fisReader);
+		try {
+			property.load(fisReader);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 		 ChromeOptions options = new ChromeOptions();
 		 options.addArguments("--headless");
