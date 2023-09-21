@@ -27,7 +27,7 @@ public class BaseFile {
 	
 	
 	@BeforeSuite
-	public void initialization() throws IOException {
+	public void initialization()  {
 			try {
 			fisReader = new FileInputStream(System.getProperty("user.dir") + "/src/test/resources/config.properties");
 		} catch (FileNotFoundException e) {
