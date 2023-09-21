@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test name="Surefire test(failed)">
+    <classes>
+      <class name="testCases.TestCase1">
+        <methods>
+          <include name="initialization"/>
+          <include name="mainInex"/>
+          <include name="execution"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- testCases.TestCase1 -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

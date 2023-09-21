@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-21T14:16:05 CEST" name="Default suite" finished-at="2023-09-21T14:16:32 CEST" duration-ms="26424">
+    <groups>
+    </groups>
+    <test started-at="2023-09-21T14:16:05 CEST" name="Default test" finished-at="2023-09-21T14:16:32 CEST" duration-ms="26424">
+      <class name="testCases.TestCase1">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:testCases.TestCase1@2c1b194a]" started-at="2023-09-21T14:15:36 CEST" name="initialization" finished-at="2023-09-21T14:16:05 CEST" duration-ms="28897" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method is-config="true" signature="execution()[pri:0, instance:testCases.TestCase1@2c1b194a]" started-at="2023-09-21T14:16:05 CEST" name="execution" finished-at="2023-09-21T14:16:05 CEST" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execution -->
+        <test-method signature="testSteps()[pri:0, instance:testCases.TestCase1@2c1b194a]" started-at="2023-09-21T14:16:05 CEST" name="testSteps" finished-at="2023-09-21T14:16:32 CEST" duration-ms="26276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSteps -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TestCase1@2c1b194a]" started-at="2023-09-21T14:16:32 CEST" name="closeBrowser" finished-at="2023-09-21T14:16:33 CEST" duration-ms="1522" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testCases.TestCase1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
