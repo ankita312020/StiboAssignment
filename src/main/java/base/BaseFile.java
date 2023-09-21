@@ -41,7 +41,7 @@ public class BaseFile {
 		 // driver = new ChromeDriver();
 	        driver.get(property.getProperty("URL"));
 		driver.manage().window().maximize();
-		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(50));
 
 
 		
