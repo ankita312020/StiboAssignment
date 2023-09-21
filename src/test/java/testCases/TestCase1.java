@@ -10,7 +10,7 @@ public class TestCase1 extends BaseFile{
 	@Test
 	public void testSteps() {
 			
-		//udemy.getAlertButton();
+		udemy.getAlertButton();
 		udemy.getScrollBar();
 		Assert.assertTrue(utils.tikMark("Course assignment with custom messaging", "team") && utils.notTikMark("Course assignment with custom messaging", "growth"));
 		Assert.assertTrue(utils.tikMark("Custom user groups","team") && utils.notTikMark("Custom user groups","growth"));
