@@ -23,7 +23,7 @@ public class BaseFile {
 	public static WebDriverWait wait = null;
 	public static WebDriver driver;
 	public static UdemyBusiness udemy = null;
-	public static UtilityFile utils=new  UtilityFile();
+	//public static UtilityFile utils=new  UtilityFile();
 	
 	
 	@BeforeSuite
