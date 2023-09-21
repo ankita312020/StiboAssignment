@@ -21,7 +21,7 @@ public class BaseFile {
 	public static FileInputStream fisReader = null;
 	public static Properties property = null;
 	public static WebDriverWait wait = null;
-	public static WebDriver driver = null;
+	public static WebDriver driver;
 	public static UdemyBusiness udemy = null;
 	public static UtilityFile utils=new  UtilityFile();
 	
