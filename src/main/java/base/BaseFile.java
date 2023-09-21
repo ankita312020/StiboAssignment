@@ -40,8 +40,8 @@ public class BaseFile {
 		 // WebDriverManager.chromedriver().setup();
 		 // driver = new ChromeDriver();
 	        driver.get(property.getProperty("URL"));
+		Thread.sleep(10000);
 		driver.manage().window().maximize();
-		 Thread.sleep(10000);
 		wait = new WebDriverWait(driver, Duration.ofSeconds(50));
 
 
